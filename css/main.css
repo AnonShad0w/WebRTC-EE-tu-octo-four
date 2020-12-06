@@ -6,3 +6,11 @@ video {
   max-width: 100%;
   width: 320px;
 }
+
+.page-header {
+  text-align: center;
+}
+
+.videos {
+  margin: 0 auto;
+}
