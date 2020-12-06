@@ -235,6 +235,10 @@ function handleRemoteStreamAdded(event) {
   console.log("Remote stream added.");
   remoteStream = event.stream;
   remoteVideo.srcObject = remoteStream;
+  
+  pc.addEventListener('track', async (event) => {
+    remoteStream.addTrack(event.track, remoteStream);
+  });
 }
 
 function handleRemoteStreamRemoved(event) {
