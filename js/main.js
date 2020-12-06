@@ -109,7 +109,6 @@ function gotStream(stream) {
   console.log("Adding local stream.");
   localStream = stream;
   localVideo.srcObject = stream;
-  stream.getTracks().forEach(track => pc.addTrack(track, stream));
   sendMessage("got user media");
   if (isInitiator) {
     maybeStart();
