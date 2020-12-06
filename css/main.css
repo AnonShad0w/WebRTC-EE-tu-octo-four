@@ -13,4 +13,5 @@ video {
 
 #videos {
   margin: 0 auto;
+  display: block;
 }
